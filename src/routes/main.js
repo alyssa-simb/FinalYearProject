@@ -15,12 +15,30 @@ routes.get("/", async (req,res) => {
     });
 });
 
-routes.get('/gallery', async (req,res) => {
+routes.get('/facts', async (req,res) => {
 
     const details = await Detail.findOne({"_id":"63ee4e21db2f0686f5b9584b"});
-    res.render("gallery", {
+    res.render("facts", {
         details: details,
     })
 })
+
+routes.get('/memory-techniques', async (req,res) => {
+
+    const details = await Detail.findOne({"_id":"63ee4e21db2f0686f5b9584b"});
+    res.render("memory-techniques", {
+        details: details,
+    })
+})
+
+routes.get('/links', async (req,res) => {
+
+    const details = await Detail.findOne({"_id":"63ee4e21db2f0686f5b9584b"});
+    res.render("links", {
+        details: details,
+    })
+})
+
+
 
 module.exports=routes

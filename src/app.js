@@ -3,9 +3,11 @@ const hbs = require("hbs");
 const app = express();
 const mongoose = require("mongoose")
 const routes = require('./routes/main')
-const Detail = require("./models/Detail")
+const Detail = require("./models/Detail");
 
-app.use('',routes)
+//to render static images
+app.use('/static',express.static("public"));
+app.use('',routes);
 
 //template engine
 app.set('view engine','hbs')
@@ -26,12 +28,12 @@ mongoose.connect("mongodb+srv://uukiyoo:FinalYear@cluster0.cz70zqg.mongodb.net/F
                     url: "/"
                 },
                 {
-                    label:"Services",
-                    url: "/services"
+                    label:"Facts",
+                    url: "/facts"
                 },
                 {
-                    label: "Gallery",
-                    url: "/gallery"
+                    label: "Memory Techniques",
+                    url: "/memory-techniques"
                 },    
                 {
                     label: "Links",
@@ -50,3 +52,5 @@ mongoose.connect("mongodb+srv://uukiyoo:FinalYear@cluster0.cz70zqg.mongodb.net/F
 app.listen(process.env.PORT | 3000, ()=>{
     console.log("Server Started")
 });
+
+
