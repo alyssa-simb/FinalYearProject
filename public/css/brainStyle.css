@@ -1,0 +1,8 @@
+body{
+    background: rgb(28,108,171);
+    background: linear-gradient(90deg, rgba(28,108,171,1) 29%, rgba(79,156,221,1) 57%, rgba(255,255,255,1) 95%);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
