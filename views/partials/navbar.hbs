@@ -1,22 +1,22 @@
 <nav class="navbar border-bottom navbar-expand-lg py-3 navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-        <img src="{{data.brandIconUrl}}" alt="" width="35" style="border-radius: 50%;" height="24">
-        {{data.brandName}}
+        <img src={{data.brandIconUrl}} alt="" width="35" style="border-radius: 50%;" height="24">
+       {{data.brandName}}
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
+      
         {{#each data.links}}
 
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{this.url}}">{{this.label}}</a>
         </li>
        
-       {{/each}}
+       {{/each}}  
       <!-- DROPDOWN FEATURE
           <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">

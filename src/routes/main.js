@@ -7,7 +7,7 @@ const routes = express.Router()
 
 routes.get("/", async (req,res) => {
 
-   const details = await Detail.findOne({"_id":"63ee4e21db2f0686f5b9584b"})
+   const details = await Detail.findOne({"_id":"64106f4aa86a850088ce86ed"})
   // console.log(details)
 
     res.render("index",{
@@ -15,26 +15,33 @@ routes.get("/", async (req,res) => {
     });
 });
 
-routes.get('/facts', async (req,res) => {
+routes.get('/q&a', async (req,res) => {
 
-    const details = await Detail.findOne({"_id":"63ee4e21db2f0686f5b9584b"});
-    res.render("facts", {
+    const details = await Detail.findOne({"_id":"64106f4aa86a850088ce86ed"});
+    res.render("q&a", {
         details: details,
     })
 })
 
 routes.get('/memory-techniques', async (req,res) => {
 
-    const details = await Detail.findOne({"_id":"63ee4e21db2f0686f5b9584b"});
+    const details = await Detail.findOne({"_id":"64106f4aa86a850088ce86ed"});
     res.render("memory-techniques", {
         details: details,
     })
 })
 
-routes.get('/links', async (req,res) => {
+routes.get('/the-brain', async (req,res) => {
 
-    const details = await Detail.findOne({"_id":"63ee4e21db2f0686f5b9584b"});
-    res.render("links", {
+    const details = await Detail.findOne({"_id":"64106f4aa86a850088ce86ed"});
+    res.render("the-brain", {
+        details: details,
+    })
+})
+routes.get('/what-is-dementia', async (req,res) => {
+
+    const details = await Detail.findOne({"_id":"64106f4aa86a850088ce86ed"});
+    res.render("what-is-dementia", {
         details: details,
     })
 })
