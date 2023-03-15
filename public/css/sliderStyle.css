@@ -22,9 +22,9 @@
     text-align: center;
     margin-top: 1em;
   }
-  p{
+  #smallText{
     text-align: center;
-    margin-top: .5em; 
+    margin-top: .75em; 
     color: white;
   }
   
@@ -36,7 +36,7 @@
   }
   
   .card-carousel {
-    opacity: 0.55;
+    opacity: 0.9;
     --card-width: 80%;
     --card-height: 650px;
     z-index: 1;
@@ -106,12 +106,7 @@
   
   */
   
-  .image-container { 
-    margin-bottom: 2em;
-   /* border-radius: 100%; circle */ 
-    padding: 1em;
-  }
-  
+ 
   /* extra circle shadow
   .image-container::after {
     content: "";
@@ -137,5 +132,21 @@
   }
   h3{
     color: black;
+    margin-top: 1em;
+    
   }
-  
+
+  #image1{
+    margin: 1em;
+    margin-left: 20%;
+    max-width: 550px;
+    max-height: 450px;
+    opacity: 1;
+  }
+
+button{
+  height: 2em;
+  width: 7em;
+  background-color: black;
+  -webkit-text-fill-color: aliceblue;
+} 

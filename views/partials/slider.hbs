@@ -5,12 +5,13 @@
 </head>
 <body>
 <h1>Human Memory Education</h1>
-<p>Drag Cards to Move</p>
+
 <div class="container">
   <div class="card-carousel">
     <div class="card" id="1">
       <div class="image-container"></div>
-      <h3>Welcome to my Final Year Project</h3>
+      <img id="image1" src="/static/css/images/technique.jpg">
+      <h3>Memory Techniques</h3>
     </div>
     <div class="card" id="2">
       <div class="image-container"></div>
@@ -18,17 +19,25 @@
     </div>
     <div class="card" id="3">
       <div class="image-container"></div>
-      <h3>Welcome to my Final Year Project!</h3>
+      <img id="image1" src="/static/css/images/alzheimers1.jpg">
+      <h3>What is Dementia?</h3>
+      <p>Click below to learn more about Dementia</p>
+            <form action="/what-is-dementia">
+              <button type="submit">Learn More</button>
+            </form>
     </div>  
     <div class="card" id="4">
       <div class="image-container"></div>
-      <h3>Welcome to my Final Year Project</h3>
+      <img id="image1" src="/static/css/images/brain1.jpg">
+      <h3>The Brain</h3>
     </div>
     <div class="card" id="5">
       <div class="image-container"></div>
-      <h3>Welcome to my Final Year Project</h3>
+      <img id="image1" src="/static/css/images/question1.jpg">
+      <h3>Question & Answers</h3>
     </div>
-    
+  
   <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
 </div>  
+  <p id="smallText">Drag Cards to Move</p>
 </body>
