@@ -6,3 +6,16 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.container{
+    margin-top:1em;
+    padding: 50px;
+    border: 1px solid white;
+    height: 70%;
+    background-color: white;
+    opacity: 0.85;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

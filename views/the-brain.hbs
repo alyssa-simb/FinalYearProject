@@ -13,16 +13,56 @@
   <body>
   {{>navbar data = details}}
 
-
+ <!--This is the brain page-->
     <p id="title">The Brain</p>
+    <div class="container" id="container1">
 
-    <div class="container">
-      <img id="diagram" src="/static/css/images/braindiagram.jpg">
+      <div id="containerA">
 
-        
+      </div>
+      <div id="containerB">
+
+      </div>
+      <p>Click on the parts of the brain to learn more about it!</p>
+
     </div>
 
- 
+ <!--This is container holds the coordinates for the brain image, so a user would be able to press on a section and info on it would pop up-->
+    <div class="container">
+      <img id="diagram" src="/static/css/images/braindiagram.jpg" usemap="#diagram-labels">
+       
+        <map name="diagram-labels">
+          <area target="_self" alt="frontal-lobe" title="frontal-lobe" href="#frontal-lobe" coords="171,96,141,104,123,120,103,133,87,153,79,167,62,177,54,192,54,201,48,212,35,228,34,242,30,258,29,281,30,289,30,302,30,320,36,328,42,357,54,384,61,394,74,410,82,414,89,423,97,426,111,428,135,431,153,431,188,429,205,425,209,403,214,390,218,381,229,370,236,362,241,353,247,343,251,331,256,320,265,312,275,307,285,303,302,297,315,293,322,291,333,285,338,278,347,276,353,270,343,256,338,249,339,238,345,231,355,222,351,228,358,217,357,207,358,196,362,184,369,175,373,164,379,136,394,127,387,110,385,90,398,77,411,70,425,67,436,68,439,55,443,41,429,38,412,38,389,36,364,37,342,43,309,43,268,56,233,70,211,75,190,81,182,88" shape="poly">
+          <area target="_self" alt="parietal-lobe" title="parietal-lobe" href="#parietal-lobe" coords="450,43,463,44,472,47,494,47,517,48,534,59,568,69,589,81,610,93,635,117,660,130,677,157,690,169,702,187,705,199,681,221,653,251,647,264,648,275,616,271,445,243,423,243,407,249,394,258,385,266,368,266,354,270,339,249,350,235,359,221,359,206,365,187,375,173,376,153,389,135,397,127,394,117,386,103,387,90,398,80,416,76,431,72,443,63,444,52" shape="poly">
+          <area target="_self" alt="temporal-lobe" title="temporal-lobe" href="#temporal-lobe" coords="442,244,647,277,654,316,630,340,619,372,608,374,600,389,587,394,593,404,564,414,539,426,504,431,470,434,457,431,444,440,422,446,394,460,375,479,359,486,332,492,297,498,266,485,237,467,226,445,209,425,219,389,240,362,255,327,282,306,333,290,355,273,369,271,385,271,396,257,417,245" shape="poly">
+          <area target="_self" alt="occipital-lobe" title="occipital-lobe" href="#occipital-lobe" coords="707,198,722,206,726,224,737,238,745,253,745,265,764,285,762,303,767,327,758,338,749,368,731,392,701,400,677,402,654,402,631,408,604,406,590,398,602,387,610,375,621,374,628,352,640,328,657,319,655,304,651,287,648,267,652,255,668,234,684,221,695,210" shape="poly">
+          <area target="_self" alt="cerebellum" title="cerebellum" href="#cerebellum" coords="695,406,696,436,688,457,670,473,649,485,636,497,612,513,581,527,543,527,510,518,490,511,470,499,462,494,445,489,438,471,436,458,431,450,455,435,544,430,557,421,592,407,627,414,654,404" shape="poly">
+        </map>
+
+
+        <div class="popup" id="frontal-lobe">
+            This is the Frontal lobe!
+           <a class="close" href="#">x</a>
+        </div>
+        <div class="popup" id="parietal-lobe">
+            This is the Parietal lobe!
+           <a class="close" href="#">x</a>
+        </div>
+        <div class="popup" id="temporal-lobe">
+            This is the Temporal lobe!
+           <a class="close" href="#">x</a>
+        </div>
+        <div class="popup" id="occipital-lobe">
+            This is the Occipital lobe!
+           <a class="close" href="#">x</a>
+        </div>
+        <div class="popup" id="cerebellum">
+            This is the Cerebellum!
+           <a class="close" href="#">x</a>
+        </div>
+
+    </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
