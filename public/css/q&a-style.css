@@ -19,3 +19,15 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+#title{
+    font-size: 290%;
+    font-weight: 500;
+    color: white;
+    margin-top: 0.75em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }

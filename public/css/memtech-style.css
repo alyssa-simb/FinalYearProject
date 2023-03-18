@@ -6,3 +6,14 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+#title{
+    font-size: 290%;
+    font-weight: 500;
+    color: white;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
