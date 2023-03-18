@@ -113,3 +113,8 @@ button{
   background-color: black;
   -webkit-text-fill-color: aliceblue;
 } 
+
+.card{
+  border-style: solid;
+  border-width: 10px;
+}

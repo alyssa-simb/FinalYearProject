@@ -45,7 +45,7 @@ body {
 .answer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items:baseline;
   padding: 35px 50px;
   
   height: 100%;
