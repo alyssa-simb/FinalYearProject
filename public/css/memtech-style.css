@@ -7,6 +7,20 @@ body{
     background-attachment: fixed;
 }
 
+.container{
+    margin-top:1em;
+    padding: 50px;
+    height: 70%;
+    background-color: white;
+    opacity: 0.85;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .75em;
+}
+
+
 #title{
     font-size: 290%;
     font-weight: 500;
