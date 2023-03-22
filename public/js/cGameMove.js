@@ -44,6 +44,24 @@ function matchCards(img1, img2) {
     }, 1200);
 }
 
+function refreshGame() {
+    // Reset game state
+    matched = 0;
+    cardOne = null;
+    cardTwo = null;
+    disableDeck = false;
+  
+    // Remove all "flip" and "shake" classes
+    cards.forEach((card) => {
+      card.classList.remove("flip", "shake");
+      card.addEventListener("click", flipCard);
+    });
+  
+    // Shuffle the cards
+    shuffleCards();
+  }
+  
+
 function shuffleCards() {
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
@@ -58,6 +76,9 @@ function shuffleCards() {
       card.addEventListener("click", flipCard);
     });
   });
+
+  const refreshButton = document.querySelector("#refresh-button");
+refreshButton.addEventListener("click", refreshGame);
     
 cards.forEach(card => {
     card.addEventListener("click", flipCard);
