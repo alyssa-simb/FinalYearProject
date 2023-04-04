@@ -1,83 +1,84 @@
 /*Stylesheet for the Memory techniques Page*/
 
 body{
-    background: rgb(34,32,35);
-    background: linear-gradient(90deg, rgba(34,32,35,1) 30%, rgba(32,60,84,1) 57%, rgba(65,136,193,1) 100%);
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
+  background: rgb(34,32,35);
+  background: linear-gradient(90deg, rgba(34,32,35,1) 30%, rgba(32,60,84,1) 57%, rgba(65,136,193,1) 100%);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .container1{
-    margin-top:1em;
-    padding: 50px;
-    height: 70%;
-    width:80%;
-    margin: auto;
-    background-color: white;
-    opacity: 0.85;
-    overflow: hidden;
-    display: flex;
-    border-radius: .75em;
-}
-
-.container2{
-  margin: auto;
   margin-top:1em;
   padding: 50px;
   height: 70%;
+  width:80%;
+  margin: auto;
   background-color: white;
   opacity: 0.85;
   overflow: hidden;
   display: flex;
-  align-items: center;
-  justify-content: center;
   border-radius: .75em;
-  width:80%;
+}
+
+.container2{
+margin: auto;
+margin-top:1em;
+padding: 50px;
+height: 70%;
+background-color: white;
+opacity: 0.85;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: .75em;
+width:80%;
 }
 
 
 
 #title{
-    font-size: 290%;
-    font-weight: 500;
-    color: white;
-    margin-top: 0.75em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
+  font-size: 290%;
+  font-weight: 500;
+  color: white;
+  margin-top: 0.75em;
+  margin-bottom: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
 
-  .subtitleA{
-    float: left;
-    margin-top: -0.3em;
-    margin-right: 0.25em;
-  }
-  
-  .subtitle-textA{
-    font-size: 23px;
-      font-weight: 550;
-  }
-  
-  .textA{
-    clear: both;
-    font-weight: 420;
-      font-size: 20px;
-  } 
+.subtitleA{
+  float: left;
+  margin-top: -0.3em;
+  margin-right: 0.25em;
+}
+
+.subtitle-textA{
+  font-size: 23px;
+    font-weight: 550;
+}
+
+.textA{
+  clear: both;
+  font-weight: 420;
+    font-size: 20px;
+} 
 
 
 ul{
-    list-style-position: inside;
-    padding: 0;
-    margin:10px;
-  }
+  list-style-position: inside;
+  padding: 0;
+  margin:10px;
+}
 
-  h3{
+h3{
 
-    margin-top: 2em;
-  }
+  margin-top: 2em;
+}
