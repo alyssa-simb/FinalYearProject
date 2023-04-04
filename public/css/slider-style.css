@@ -2,122 +2,139 @@
 
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: system-ui;
   
-  html {
-    font-family: system-ui;
-    
-  }
+}
+
+.visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0;
   
-  .visuallyhidden {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    opacity: 0;
-    
-  }
-  
-  h1 {
-    color: white;
-    text-align: center;
-    margin-top: 1em;
-  }
-  #smallText{
-    text-align: center;
-    margin-top: .75em; 
-    color: white;
-  }
-  
-  .container {
-    overflow: hidden;
-    padding: 20px;
-    margin-top: 1em;
-    background: rgba(0,0,0,.1)
-  }
-  
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  margin-top: 1em;
+}
+#smallText{
+  text-align: center;
+  margin-top: .75em; 
+  color: white;
+}
+
+.container {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 1em;
+  background: rgba(0,0,0,.1)
+}
+
+.card-carousel {
+  opacity: 0.9;
+  --card-width: 80%;
+  --card-height: 650px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+
+@media screen and (max-width: 640px) {
   .card-carousel {
-    opacity: 0.9;
-    --card-width: 80%;
-    --card-height: 650px;
-    z-index: 1;
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    height: var(--card-height);
-    min-width: var(--carousel-min-width);
-    transition: filter .3s ease;
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
   }
-  
-  @media screen and (max-width: 640px) {
-    .card-carousel {
-      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
-    }
-  }
-  
-  .card-carousel.smooth-return {
-    transition: all .2s ease;
-  }
-  
-  .card-carousel .card {
-    background: whitesmoke;
-    width: var(--card-width);
-    max-width: var(--card-max-width);
-    text-align: center;
-    padding: 3em;
-    min-width: 650px;
-    height: var(--card-height);
-    position: absolute;
-    margin: 0 auto;
-    color: rgba(0,0,0,.5);
-    transition: inherit;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
-    border-radius: 1em;
-    filter: brightness(.9);
-    display: flex;
-    align-items: center;
+}
 
-  }
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  background: whitesmoke;
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 3em;
+  min-width: 650px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0,0,0,.5);
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  align-items: center;
+
+}
+
+.card.highlight {
+  filter: brightness(1)
+}
+
+h2 {
+  padding: 1em;
+  margin-top: 1em;
+  background: rgba(0,0,0,.3);
+  text-align: center;
+  color: white;
+  border-radius: .2em;
+  display: inline-block;
+  transform: translateX(calc((100vw - 100%) / 2))
+}
+h3{
+  color: black;
+  margin-top: 1em;
   
-  .card.highlight {
-    filter: brightness(1)
-  }
+}
 
-  h2 {
-    padding: 1em;
-    margin-top: 1em;
-    background: rgba(0,0,0,.3);
-    text-align: center;
-    color: white;
-    border-radius: .2em;
-    display: inline-block;
-    transform: translateX(calc((100vw - 100%) / 2))
-  }
-  h3{
-    color: black;
-    margin-top: 1em;
-    
-  }
-
-  #image1{
-    margin: 1em;
-    max-width: 550px;
-    max-height: 450px;
-    opacity: 1;
-  }
+#image1{
+  margin: 1em;
+  max-width: 550px;
+  max-height: 450px;
+  opacity: 1;
+}
 
 button{
-  height: 2em;
-  width: 7em;
-  background-color: black;
-  -webkit-text-fill-color: aliceblue;
+height: 2em;
+width: 7em;
+background-color: black;
+-webkit-text-fill-color: aliceblue;
 } 
 
 .card{
-  border-style: solid;
-  border-width: 10px;
+border-style: solid;
+border-width: 10px;
+}
+
+.w{
+color: black;
+font-size: 20px;
+font-weight: 490;
+}
+
+.intro{
+color: black;
+font-size: 17px;
+font-weight: 500;
+}
+
+.sym{
+margin-top:-0.4em;
+font-size: 110px;
 }

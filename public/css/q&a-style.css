@@ -35,3 +35,9 @@ body{
     justify-content: center;
     
   }
+
+  .intro{
+    margin-top: -2em;
+    margin-bottom: 1em;
+    color: white;
+  }
