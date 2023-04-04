@@ -16,7 +16,7 @@ hbs.registerPartials("views/partials")
 
 //db connections
 mongoose.set('strictQuery', false);
-mongoose.connect("mongodb+srv://uukiyoo:FinalYear@cluster0.cz70zqg.mongodb.net/FYP", () => {
+mongoose.connect("mongodb+srv://*username*:FinalYear@cluster0.cz70zqg.mongodb.net/FYP", () => {
     console.log("Database Connected")
     Detail.create(
         {
